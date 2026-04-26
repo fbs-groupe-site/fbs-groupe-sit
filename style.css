@@ -424,3 +424,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+nav ul.show {
+  display: flex;
+}

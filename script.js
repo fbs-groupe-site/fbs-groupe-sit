@@ -6,7 +6,7 @@ bouton.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-<script src="script.js"></script>
+
 
 // On récupère le formulaire grâce à son id
 const formulaire = document.getElementById("contactForm");
@@ -22,3 +22,4 @@ formulaire.addEventListener("submit", function(e) {
     // On affiche un message
     alert("Merci " + nom + " ! Votre message a bien été envoyé.");
 });
+
