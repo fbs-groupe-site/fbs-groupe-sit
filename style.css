@@ -1,4 +1,4 @@
-   /* COULEURS DU SITE */
+/* COULEURS DU SITE */
 :root {
   --bleu: #1f3c88;
   --vert: #2a9d8f;
@@ -9,7 +9,7 @@
   --noir: #222;
 }
 
-  /* RÉGLAGES GÉNÉRAUX */
+/* RÉGLAGES GÉNÉRAUX */
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ body {
   margin: auto;
 }
 
-  /* EN-TÊTE */
+/* EN-TÊTE */
 header {
   background-color: var(--blanc);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -57,7 +57,7 @@ header {
   font-size: 0.9rem;
 }
 
-   /* MENU DE NAVIGATION */
+/* MENU DE NAVIGATION */
 nav ul {
   list-style: none;
   display: flex;
@@ -84,7 +84,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-   /* BANNIÈRES */
+/* BANNIÈRES */
 .banniere,
 .banniere-page {
   color: white;
@@ -96,32 +96,35 @@ nav a:hover {
 
 /* Image de fond de chaque page */
 .accueil {
-  background:
-    linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)),
+  background: linear-gradient(rgba(31, 61, 136, 0.664), rgba(31, 61, 136, 0.664)), 
     url("IMAGES/fond_cyber.jpeg");
+    background-size: contain;
+    background-position: center;
 }
 
 .informatique {
-  background:
-    linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)),
-    url("IMAGES/fond_informatique.jpg");
+  background: linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)), 
+    url("IMAGES/formation_informatique.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .construction {
-  background:
-    linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)),
+  background: linear-gradient(rgba(31, 61, 136, 0.664), rgba(31, 61, 136, 0.664)), 
     url("IMAGES/fond_construction.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .services {
-  background:
-    linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)),
+  background: linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)), 
     url("IMAGES/font_service.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .inscription-page {
-  background:
-    linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)),
+  background: linear-gradient(rgba(249, 249, 250, 0), rgba(106, 119, 153, 0.85)),
     url("IMAGES/inscripyion.jpg");
 }
 
@@ -153,7 +156,7 @@ nav a:hover {
   padding: 10px 16px;
 }
 
-   /*  SECTIONS */
+/* SECTIONS */
 section {
   padding: 60px 0;
 }
@@ -174,7 +177,7 @@ section {
   color: var(--gris);
 }
 
-   /* CARTES / SERVICES */
+/* CARTES / SERVICES */
 .grille-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,7 +203,7 @@ section {
   font-size: 1.2rem;
 }
 
-   /* BLOCS IMAGE + TEXTE */
+/* BLOCS DES INFORMATIONS LIEES AUX IMAGES ET TEXTES */
 .contenu-direction,
 .image-texte,
 .boite-contact {
@@ -269,7 +272,13 @@ section {
   color: #2f5aa8;
 }
 
-   /*FORMULAIRE */
+.membre a {
+  color: #2f5aa8;
+  decoration : none;
+  background-position: center;
+}
+
+/*FORMULAIRE */
 form {
   background-color: white;
   padding: 25px;
@@ -307,7 +316,7 @@ form button {
   width: 100%;
 }
 
-   /* PIED DE PAGE */
+/* PIED DE PAGE */
 footer {
   background-color: var(--bleu);
   color: white;
@@ -315,7 +324,7 @@ footer {
   padding: 25px;
 }
 
-   /*  VERSION TABLETTE */
+/* VERSION TABLETTE */
 @media (max-width: 900px) {
   .grille-3,
   .image-texte,
@@ -326,8 +335,8 @@ footer {
   }
 }
 
-   /*  VERSION MOBILE */
-@media (max-width: 768px) {
+/* VERSION MOBILE */
+@media screen and (max-width: 1200px) {
   .bouton-menu {
     display: block;
   }
