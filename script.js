@@ -1,4 +1,13 @@
 
+const bouton = document.getElementById("boutonMenu");
+const menu = document.getElementById("menu");
+
+bouton.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+
+<script src="script.js"></script>
+
 // On récupère le formulaire grâce à son id
 const formulaire = document.getElementById("contactForm");
 
