@@ -1,25 +1,27 @@
-
+// ================= MENU MOBILE =================
 const bouton = document.getElementById("boutonMenu");
 const menu = document.getElementById("menu");
 
-bouton.addEventListener("click", () => {
-  menu.classList.toggle("show");
-});
+if (bouton && menu) {
+  bouton.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+}
 
 
-
-// On récupère le formulaire grâce à son id
 const formulaire = document.getElementById("contactForm");
 
-// On écoute l'événement "submit"
-formulaire.addEventListener("submit", function(e) {
-    // Empêche le rechargement automatique de la page
+if (formulaire) {
+  formulaire.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // On récupère la valeur du champ nom
-    const nom = document.getElementById("nom").value;
+    const nomInput = document.getElementById("nom");
 
-    // On affiche un message
-    alert("Merci " + nom + " ! Votre message a bien été envoyé.");
-});
-
+    if (nomInput) {
+      const nom = nomInput.value;
+      alert("Merci " + nom + " ! Votre message a bien été envoyé.");
+    } else {
+      alert("Message envoyé !");
+    }
+  });
+}
